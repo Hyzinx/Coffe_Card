@@ -3,6 +3,14 @@ import 'package:flutter/material.dart';
 class CoffePrefs extends StatelessWidget {
   const CoffePrefs({super.key});
 
+  void increasStrenght() {
+    print("inc strength by 1");
+  }
+
+  void increasSugars() {
+    print("inc suger by 1");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -18,7 +26,15 @@ class CoffePrefs extends StatelessWidget {
               colorBlendMode: BlendMode.multiply,
             ),
             Expanded(child: SizedBox()),
-            Text("+"),
+            Expanded(child: SizedBox()),
+            TextButton(
+              onPressed: increasStrenght,
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.brown,
+                foregroundColor: Colors.white,
+              ),
+              child: Text("+"),
+            ),
           ],
         ),
         Row(
@@ -32,7 +48,15 @@ class CoffePrefs extends StatelessWidget {
               colorBlendMode: BlendMode.multiply,
             ),
             Expanded(child: SizedBox()),
-            Text("+"),
+            Expanded(child: SizedBox()),
+            TextButton(
+              onPressed: increasSugars,
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.brown,
+                foregroundColor: Colors.white,
+              ),
+              child: Text("+"),
+            ),
           ],
         ),
       ],
