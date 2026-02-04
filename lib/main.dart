@@ -12,14 +12,14 @@ class SandBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Sandbox"), backgroundColor: Colors.grey),
-      body: Column(
+      body: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Container(width: 100, color: Colors.red, child: Text('One')),
-          Container(width: 150, color: Colors.green, child: Text('Two')),
-          Container(width: 200, color: Colors.blue, child: Text('Three')),
-          Container(width: 100, color: Colors.yellow, child: Text('Four')),
+          Container(height: 100, color: Colors.red, child: Text('One')),
+          Container(height: 150, color: Colors.green, child: Text('Two')),
+          Container(height: 200, color: Colors.blue, child: Text('Three')),
+          Container(height: 100, color: Colors.yellow, child: Text('Four')),
         ],
       ),
     );
