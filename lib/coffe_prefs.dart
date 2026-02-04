@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 
-class CoffePrefs extends StatelessWidget {
+class CoffePrefs extends StatefulWidget {
   const CoffePrefs({super.key});
 
+  @override
+  State<CoffePrefs> createState() => _CoffePrefsState();
+}
+
+class _CoffePrefsState extends State<CoffePrefs> {
+  int strength = 1;
+  int sugars = 1;
+
   void increasStrenght() {
-    print("inc strength by 1");
+    setState(() {
+      strength = (strength < 5) ? strength + 1 : 1;
+    });
   }
 
   void increasSugars() {
-    print("inc suger by 1");
+    setState(() {
+      sugars = (sugars < 5) ? sugars + 1 : 0;
+    });
   }
 
   @override
@@ -18,13 +30,13 @@ class CoffePrefs extends StatelessWidget {
         Row(
           children: [
             Text("Strenghth: "),
-            Text("3"),
-            Image.asset(
-              "assets/images/coffee_bean.png",
-              width: 25,
-              color: Colors.brown[100],
-              colorBlendMode: BlendMode.multiply,
-            ),
+            for (int i = 0; i <= strength - 1; i++)
+              Image.asset(
+                "assets/images/coffee_bean.png",
+                width: 25,
+                color: Colors.brown[100],
+                colorBlendMode: BlendMode.multiply,
+              ),
             Expanded(child: SizedBox()),
             Expanded(child: SizedBox()),
             TextButton(
@@ -40,13 +52,15 @@ class CoffePrefs extends StatelessWidget {
         Row(
           children: [
             Text("Sugars: "),
-            Text("3"),
-            Image.asset(
-              "assets/images/sugar_cube.png",
-              width: 25,
-              color: Colors.brown[100],
-              colorBlendMode: BlendMode.multiply,
-            ),
+            if (sugars == 0) Text("$sugars"),
+            for (int i = 0; i <= sugars - 1; i++)
+              Image.asset(
+                "assets/images/sugar_cube.png",
+                width: 25,
+                color: Colors.brown[100],
+                colorBlendMode: BlendMode.multiply,
+              ),
+
             Expanded(child: SizedBox()),
             Expanded(child: SizedBox()),
             TextButton(
