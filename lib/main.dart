@@ -25,7 +25,16 @@ class Home extends StatelessWidget {
       // height: 100,
       padding: EdgeInsets.symmetric(horizontal: 20),
       margin: EdgeInsets.fromLTRB(12, 32, 1, 12),
-      child: Text("Hello In My Coffe Shop",style: TextStyle(color: Colors.white),),
+      child: Text(
+        "Hello In My Coffe Shop",
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 18,
+          letterSpacing: 4,
+          decoration: TextDecoration.underline,
+          fontStyle: FontStyle.italic
+        ),
+      ),
     );
   }
 }
