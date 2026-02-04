@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
         title: Text("My Coffe Id", style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.brown[700],
       ),
-      body: Text("Hello In My Coffe Shop"),
+      body: Column(),
     );
   }
 }
