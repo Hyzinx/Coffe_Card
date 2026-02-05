@@ -1,16 +1,54 @@
-# coffe_card
+# ☕ Coffee Card
 
-A new Flutter project.
+## 📱 First Flutter Project
 
-## Getting Started
+**Coffee Card** is my first Flutter project.  
+The goal of this project is to learn Flutter fundamentals by building a simple and practical application.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 What I Learned
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🧱 Flutter Basics
+- Understanding basic **Flutter widgets**
+- Working with **Flex layouts**
+  - `Column`
+  - `Row`
+- Using the `Expanded` widget
+  - Why it is important
+  - How it allows widgets to take available space
+  - Why it must be used inside a `Flex` widget (`Row` or `Column`)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+### 🎨 Widget Styling
+- Styling widgets in Flutter
+- Styling buttons using:
+  - `styleFrom()`
+- Customizing colors, sizes, and text styles
+
+---
+
+### 🔄 State Management Basics
+- Difference between:
+  - `StatelessWidget`
+  - `StatefulWidget`
+- How state works in Flutter
+- Updating UI using `StatefulWidget` and `setState()`
+
+---
+
+## 🖼️ App Preview
+
+<img width="1920" height="1080" alt="Coffee Card App Preview" src="https://github.com/user-attachments/assets/1ea6106f-4520-4511-acfc-fdd120c749de" />
+
+---
+
+## 🛠️ Tech Stack
+- **Flutter**
+- **Dart**
+
+---
+
+## ©️ Copyright
+© 2026 Ahmed Essam
